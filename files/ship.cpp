@@ -70,3 +70,21 @@ bool Ship::hasPartIn(int row, int col) {
     return false;
 }
 }
+
+bool Ship::isDamaged() {
+    for (size_t i = 0; i < m_parts.size(); ++i) {
+        if (m_parts[i].isDamaged()) {
+            return true;
+        }
+    }
+    return false;
+}
+
+bool Ship::isSunk() {
+    for (size_t i = 0; i < m_parts.size(); ++i) {
+        if (!m_parts[i].isDamaged()) {
+            return false;
+        }
+    }
+    return true;
+}

@@ -1,0 +1,5 @@
+Player Erledigt
+Part	Erledigt
+Ship	Erledigt
+GameBoard 1/7
+Battleship 0/2
